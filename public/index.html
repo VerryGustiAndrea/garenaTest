@@ -9,12 +9,16 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <link rel="stylesheet" href="./scss/topnav.css"> </head>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <title>One page</title>
+    <!-- <link href="./../src/style.css" type="text/css" rel="stylesheet" /> -->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -27,7 +31,31 @@
     <title>React App</title>
   </head>
   <body>
+
+    <div class="topnav" id="myTopnav">
+      <div class="myMenu" id="myMenu">
+      <img  src="./assets/Sea-Undergraduate-Logo.png " alt="Home" style="margin-left: 15%; margin-top: 20px; width:300px;height:50px;" >
+      
+      <a href="#pageD">FAQ</a>
+      <a>|</a>
+      <a href="#pageC">ApplyHere</a>
+      <a>|</a>
+      <a href="#pageB">Program</a>
+      <a>|</a>
+      <a href="#Home" class="active">Home</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      </div>
+    </div>
+    
+  
+
+
+
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -39,5 +67,23 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+<!-- Top Nav -->
+<script>
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} 
+</script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/smoothScroll.js"></script>
+
+    
   </body>
 </html>
