@@ -1,26 +1,26 @@
 # Home Page
   <br>
-  <img src="https://prnt.sc/sp8a13" width="1200">
+  <img src="https://prnt.sc/sp8a13" width="400">
   <br>
 
   # Program Page
   <br>
-  <img src="https://prnt.sc/sp8ao4" width="1200">
+  <img src="https://prnt.sc/sp8ao4" width="400">
   <br>
   
   # Time Line
   <br>
-  <img src="  https://prnt.sc/sp8b3g" width="1200">
+  <img src="  https://prnt.sc/sp8b3g" width="400">
   <br>
   
   # Testimoni
   <br>
-  <img src="  https://prnt.sc/sp8ceo" width="1200">
+  <img src="  https://prnt.sc/sp8ceo" width="400">
   <br>
   
   # FAQ
   <br>
-  <img src="  https://prnt.sc/sp8cyi" width="1200">
+  <img src="  https://prnt.sc/sp8cyi" width="400">
   <br>`  
   
   
