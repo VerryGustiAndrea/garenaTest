@@ -1,4 +1,30 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Home Page
+  <br>
+  <img src="https://prnt.sc/sp8a13" width="1200">
+  <br>
+
+  # Program Page
+  <br>
+  <img src="https://prnt.sc/sp8ao4" width="1200">
+  <br>
+  
+  # Time Line
+  <br>
+  <img src="  https://prnt.sc/sp8b3g" width="1200">
+  <br>
+  
+  # Testimoni
+  <br>
+  <img src="  https://prnt.sc/sp8ceo" width="1200">
+  <br>
+  
+  # FAQ
+  <br>
+  <img src="  https://prnt.sc/sp8cyi" width="1200">
+  <br>`  
+  
+  
+
 
 ## Available Scripts
 
