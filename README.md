@@ -1,34 +1,4 @@
-# Home Page
-  <br>
-  <img src="https://ibb.co/MNL3rch" width="400">
-  <br>
-
-  # Program Page
-  <br>
-  <img src="https://ibb.co/nf8QvFc" width="400">
-  <br>
-  
-  # Time Line
-  <br>
-  <img src="https://ibb.co/Fm3W8fr" width="400">
-  <br>
-  
-  # Testimoni
-  <br>
-  <img src="https://ibb.co/3zLPQdz" width="400">
-  <br>
-  
-  # FAQ
-  <br>
-  <img src=" https://ibb.co/P1g67v6" width="400">
-  <br>`  
-  
- 
-
-
-
-
-
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
