@@ -33,7 +33,6 @@ class Partner extends Component {
     // console.log(
     //   this.props.websiteContent.programContent.data[0].program_content
     // );
-    console.log(this.props.faculty.facultyData.data);
     this.setState({
       dataFaculty: this.props.faculty.facultyData.data,
     });
@@ -69,8 +68,8 @@ class Partner extends Component {
                 return (
                   <div class="flex-container-partner">
                     {/* <div class="grid-container"> */}
-                    <div className="titleSlide">
-                      <p>{e.univ_name}</p>
+                    <div className="titleSliding">
+                      <h2>{e.univ_name}</h2>
                     </div>
                     <div class="row">
                       <div class="column">

@@ -7,6 +7,9 @@ import Home from "./view/Home";
 import Program from "./view/Program";
 import Partner from "./view/Partner";
 import TimeLine from "./view/TimeLine";
+import Testimonial from "./view/Testimonial";
+import Apply from "./view/Apply";
+import FAQ from "./view/FAQ";
 
 function App() {
   return (
@@ -18,18 +21,23 @@ function App() {
         <Program />
       </section>
 
-      <section id="pageC">
+      <section id="Partner">
         <Partner />
       </section>
 
-      <section id="pageD">
+      <section id="Timeline">
         <TimeLine />
       </section>
 
-      <section id="pageE">
-        <h1>Page 5</h1>
+      <section id="Testimonial">
+        <Testimonial />
+      </section>
 
-        <h2>Verry Gusti Andrea</h2>
+      <section id="Apply">
+        <Apply />
+      </section>
+      <section id="FAQ">
+        <FAQ />
       </section>
     </div>
   );

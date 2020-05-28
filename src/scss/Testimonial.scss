@@ -1,5 +1,7 @@
 .TextContent2 {
   h1 {
+    font-family: Avenir;
+
     // background-color: white;
     // position: absolute;
     color: #261668;
@@ -30,11 +32,25 @@
   }
 }
 
-.faculty {
+.story {
   font-family: AvenirLTStd;
   // position: absolute;
   // padding-top: 20px;
-  text-align: right;
+  text-align: justify;
+  font-style: italic;
+
+  // background-color: red;
+
+  // flex-direction: column;
+}
+
+.nickname {
+  font-family: AvenirLTStd;
+  // position: absolute;
+  padding-top: 30px;
+  text-align: left;
+  font-style: italic;
+  font-weight: bold;
 
   // background-color: red;
 
@@ -101,4 +117,12 @@
   content: "";
   display: table;
   clear: both;
+}
+
+.contentApply {
+  position: absolute;
+  z-index: 1;
+  // right: 4%;
+  // top: 730%;
+  width: 100%;
 }

@@ -7,41 +7,23 @@ class TimeLine extends Component {
   constructor() {
     super();
     this.state = {
-      programContent: [],
-      freshman_program: [],
+      dataTimeLine: {},
     };
   }
-  getTextContent = async () => {
+  getDataTimeLine = async () => {
     await this.props.dispatch(getProgramContent());
     // console.log(
     //   this.props.websiteContent.programContent.data[0].program_content
     // );
+    console.log(this.props.websiteContent.programContent.data[0]);
     this.setState({
-      programContent: this.props.websiteContent.programContent.data[0]
-        .program_content,
+      dataTimeLine: this.props.websiteContent.programContent.data[0],
     });
     // setProgramContent(props.program.data);
   };
 
-  getFreshmanProgram = async () => {
-    await this.props.dispatch(getProgramContent());
-
-    this.setState({
-      freshman_program: this.props.websiteContent.programContent.data[0]
-        .freshman_program,
-    });
-  };
-
-  stringToHTML = (str) => {
-    var doc = new DOMParser().parseFromString(str, "text/html");
-
-    // console.log(doc.body.innerHTML);
-    return document.write(doc.body.innerHTML);
-  };
-
   componentDidMount = () => {
-    this.getTextContent();
-    this.getFreshmanProgram();
+    this.getDataTimeLine();
   };
   render() {
     return (
@@ -54,22 +36,22 @@ class TimeLine extends Component {
             <div class="kolom">
               <h2>Registration</h2>
               <img className="photoProgram1" src="./assets/Timeline-1.png" />
-              <p>Essay and CV Screening</p>
+              <p>{this.state.dataTimeLine.date_regis}</p>
             </div>
             <div class="kolom">
               <h2>Essay and CV Screening</h2>
               <img className="photoProgram1" src="./assets/Timeline-2.png" />
-              <p>On-campus Interview</p>
+              <p>{this.state.dataTimeLine.date_esay_cvscreen}</p>
             </div>
             <div class="kolom">
               <h2>On-campus Interview</h2>
               <img className="photoProgram1" src="./assets/Timeline-3.png" />
-              <p>Some text..</p>
+              <p>{this.state.dataTimeLine.date_interview}</p>
             </div>
             <div class="kolom">
               <h2>Announcement of Selected Scholars</h2>
               <img className="photoProgram1" src="./assets/Timeline-4.png" />
-              <p>Some text..</p>
+              <p>{this.state.dataTimeLine.date_announce}</p>
             </div>
           </div>
         </div>
