@@ -11,6 +11,8 @@
     />
     <link rel="stylesheet" href="./scss/topnav.css"> </head>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -33,19 +35,20 @@
   <body>
 
     <div class="topnav" id="myTopnav">
+
       <div class="myMenu" id="myMenu">
-      <img  src="./assets/Sea-Undergraduate-Logo.png " alt="Home" style="margin-left: 15%; margin-top: 20px; width:300px;height:50px;" >
-      
+        <ul>
+        <img  class="logo" src="./assets/Sea-Undergraduate-Logo.png " alt="Home"  >
+      <a></a>
+      <a href="#Home" class="active">Home </a>
+      <a href="#Program">Program </a>
+      <a href="#pageC">Apply Here </a>
       <a href="#pageD">FAQ</a>
-      <a>|</a>
-      <a href="#pageC">ApplyHere</a>
-      <a>|</a>
-      <a href="#pageB">Program</a>
-      <a>|</a>
-      <a href="#Home" class="active">Home</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
+      
+    </ul>
       </div>
     </div>
     

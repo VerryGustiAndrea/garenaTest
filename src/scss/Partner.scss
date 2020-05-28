@@ -1,0 +1,156 @@
+.TextContent2 {
+  h1 {
+    // background-color: white;
+    // position: absolute;
+    color: #261668;
+    // width: 40%;
+    // padding-left: 12%;
+    text-align: center;
+    font-size: 36px;
+    z-index: 2;
+    font-weight: bold;
+    // margin-top: 20px;
+  }
+}
+.Slide1 {
+  // background-color: red;
+  // top: 40%;
+  width: 25%;
+  height: 25%;
+}
+
+.titleSlide p {
+  font-family: AEH;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+}
+
+.faculty a {
+  font-family: AEH;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+  color: black;
+  height: 320px;
+}
+
+.container {
+  width: 90%;
+  height: 500px;
+  margin: 5%;
+}
+.slick-slide {
+  height: 320px;
+  box-sizing: border-box;
+  img {
+    height: 100%;
+    width: 100%;
+    border: 2.5px solid white;
+    box-sizing: border-box;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "Slide1 Slide1 titleSlide titleSlide"
+    "Slide1 Slide1 content content";
+  grid-gap: 10px;
+  // background-color: #2196f3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  /* font-size: 20px; */
+}
+
+// .TextContent2 {
+//   p {
+//     font-family: AvenirLTStd;
+//     padding-top: 20px;
+
+//     color: #424242;
+//     padding-left: 15%;
+//     width: 70%;
+//     text-align: justify;
+//     font-size: 17px;
+//     line-height: 1.7;
+//     z-index: 2;
+//   }
+// }
+
+// .classProgram {
+//   margin-left: 15%;
+//   margin-top: 40px;
+//   padding-left: 4%;
+//   background-color: white;
+//   width: 100%;
+//   box-shadow: 0px 8px 20px 1px #888888;
+// }
+
+// .photoProgram1 {
+//   width: 40%;
+//   margin-left: 30%;
+//   margin-top: 5%;
+//   align-items: center;
+// }
+
+// .classProgram {
+//   h3 {
+//     font-family: Avenir;
+//     padding-top: 20px;
+//     padding-bottom: 20px;
+
+//     color: #261668;
+//     // padding-left: 15%;
+//     width: 100%;
+//     text-align: center;
+//     font-size: 21px;
+//     line-height: 1.5;
+//     z-index: 2;
+//   }
+// }
+
+// .classProgram {
+//   p {
+//     p {
+//       strong {
+//         font-family: AvenirLTStd;
+//         color: #424242;
+//         font-size: 15px;
+//       }
+
+//       margin-left: 40px;
+//       padding-bottom: 10px;
+//     }
+//     li {
+//       font-family: AvenirLTStd;
+//       // padding-top: 10px;
+//       // padding-bottom: 10px;
+
+//       color: #424242;
+//       margin-left: 60px;
+//       width: 75%;
+//       text-align: left;
+//       font-size: 14px;
+//       line-height: 1.7;
+//       z-index: 2;
+//     }
+//   }
+// }
+
+// .flex-container {
+//   display: flex;
+//   > div {
+//     margin: 10px;
+//     margin-left: 13%;
+//     margin-top: 20px;
+
+//     background-color: white;
+//     width: 30%;
+//     box-shadow: 0px 8px 20px 1px #888888;
+//   }
+// }

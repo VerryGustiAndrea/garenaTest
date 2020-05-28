@@ -1,18 +1,31 @@
 .topnav {
   overflow: hidden;
-
   background-color: rgb(255, 255, 255);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  z-index: 10;
 }
 
 .myMenu {
   padding-right: 15%;
 }
 
-.topnav a {
+.logo {
+  position: fixed;
+  left: 14%;
+  margin-top: 20px;
+  width: 300px;
+  height: 50px;
+}
+
+.topnav ul {
   float: right;
+}
+
+.topnav a {
+  font-family: AEH;
+  float: left;
   display: block;
   color: #525252;
   text-align: center;
@@ -20,13 +33,13 @@
   padding: 34px 10px;
   text-decoration: none;
   font-size: 20px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
-/* .topnav a:hover {
-  background-color: #ddd;
+.topnav a:hover {
+  background-color: rgb(255, 255, 255);
   color: black;
-} */
+}
 
 .topnav a.active {
   background-color: rgb(255, 255, 255);
@@ -44,18 +57,36 @@
   .topnav a.icon {
     float: right;
     display: block;
+    margin-right: 16.5%;
+  }
+
+  .logo {
+    position: fixed;
+    left: 14%;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .topnav.responsive {
-    position: relative;
+    position: fixed;
   }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
+
+  /* .myMenu.responsive {
+    padding-left: 15%;
+  } */
+
+  .topnav.responsive ul {
+    float: left;
+  }
+
   .topnav.responsive a {
     float: none;
     display: block;

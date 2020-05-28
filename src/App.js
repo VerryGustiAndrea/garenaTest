@@ -2,20 +2,23 @@ import React from "react";
 // import logo from "./logo.svg";
 // import "./App.css";
 import "./scss/App.scss";
-// import "./style.css";
+
+import Home from "./view/Home";
+import Program from "./view/Program";
+import Partner from "./view/Partner";
 
 function App() {
   return (
     <div className="App">
       <section id="Home">
-        <h1>Page 1</h1>
+        <Home />
       </section>
-      <section id="pageB">
-        <h1>Page 2</h1>
+      <section id="Program">
+        <Program />
       </section>
 
       <section id="pageC">
-        <h1>Page 3</h1>
+        <Partner />
       </section>
 
       <section id="pageD">
