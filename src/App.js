@@ -6,6 +6,7 @@ import "./scss/App.scss";
 import Home from "./view/Home";
 import Program from "./view/Program";
 import Partner from "./view/Partner";
+import TimeLine from "./view/TimeLine";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
       </section>
 
       <section id="pageD">
-        <h1>Page 4</h1>
+        <TimeLine />
       </section>
 
       <section id="pageE">

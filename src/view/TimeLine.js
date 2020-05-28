@@ -48,30 +48,29 @@ class TimeLine extends Component {
       <>
         <div className="TextContent2">
           <h1>Time Line</h1>
-          <p>{this.state.programContent}</p>
         </div>
-
-        <div class="flex-container">
-          <div className="classProgram">
-            <img className="photoProgram1" src="./assets/icon-freshmen.png" />
-            <div className="titleClassProgram">
-              <h3>Sea Freshman Scholarship Program</h3>
+        <div className="alur">
+          <div class="row">
+            <div class="kolom">
+              <h2>Registration</h2>
+              <img className="photoProgram1" src="./assets/Timeline-1.png" />
+              <p>Essay and CV Screening</p>
             </div>
-
-            <p
-              dangerouslySetInnerHTML={{ __html: this.state.freshman_program }}
-            />
-          </div>
-
-          <div className="classProgram">
-            <img className="photoProgram1" src="./assets/icon-senior.png" />
-            <div className="titleClassProgram">
-              <h3>Sea Freshman Scholarship Program</h3>
+            <div class="kolom">
+              <h2>Essay and CV Screening</h2>
+              <img className="photoProgram1" src="./assets/Timeline-2.png" />
+              <p>On-campus Interview</p>
             </div>
-
-            <p
-              dangerouslySetInnerHTML={{ __html: this.state.freshman_program }}
-            />
+            <div class="kolom">
+              <h2>On-campus Interview</h2>
+              <img className="photoProgram1" src="./assets/Timeline-3.png" />
+              <p>Some text..</p>
+            </div>
+            <div class="kolom">
+              <h2>Announcement of Selected Scholars</h2>
+              <img className="photoProgram1" src="./assets/Timeline-4.png" />
+              <p>Some text..</p>
+            </div>
           </div>
         </div>
       </>
