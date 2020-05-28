@@ -12,27 +12,39 @@
     // margin-top: 20px;
   }
 }
-.Slide1 {
-  // background-color: red;
-  // top: 40%;
-  width: 25%;
-  height: 25%;
+.Slide1 img {
+  // width: 50%;
+  // height: 100%;
+  // background-color: rebeccapurple;
+  // z-index: 5;
 }
 
 .titleSlide p {
   font-family: AEH;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 21px;
   text-align: center;
+  z-index: 4;
 }
 
-.faculty a {
-  font-family: AEH;
+.faculty {
+  font-family: AvenirLTStd;
+  // position: absolute;
+  // padding-top: 20px;
+  text-align: right;
+
+  // background-color: red;
+
+  // flex-direction: column;
+}
+
+.faculty span {
+  // font-family: AEH;
+  width: 100%;
+  z-index: 3;
+  font-size: 13px;
   font-weight: bold;
-  font-size: 28px;
-  text-align: center;
-  color: black;
-  height: 320px;
+  // padding-left: 40px;
 }
 
 .container {
@@ -41,116 +53,49 @@
   margin: 5%;
 }
 .slick-slide {
-  height: 320px;
+  height: 400px;
+  width: 400px;
   box-sizing: border-box;
   img {
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 50%;
+    // background-color: saddlebrown;
     border: 2.5px solid white;
     box-sizing: border-box;
+    margin-left: 0%;
+    z-index: 5;
   }
 }
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "Slide1 Slide1 titleSlide titleSlide"
-    "Slide1 Slide1 content content";
-  grid-gap: 10px;
-  // background-color: #2196f3;
+.flex-container-partner {
+  display: flex;
+  > div {
+    margin: 10px;
+    // margin-left: 13%;
+    // margin-top: -10px;
+    align-content: center;
+    background-color: white;
+    width: 90%;
+    height: 70%;
+    // box-shadow: 0px 8px 20px 1px #888888;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
   padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
-.grid-container > div {
-  text-align: center;
-  padding: 20px 0;
-  /* font-size: 20px; */
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-
-// .TextContent2 {
-//   p {
-//     font-family: AvenirLTStd;
-//     padding-top: 20px;
-
-//     color: #424242;
-//     padding-left: 15%;
-//     width: 70%;
-//     text-align: justify;
-//     font-size: 17px;
-//     line-height: 1.7;
-//     z-index: 2;
-//   }
-// }
-
-// .classProgram {
-//   margin-left: 15%;
-//   margin-top: 40px;
-//   padding-left: 4%;
-//   background-color: white;
-//   width: 100%;
-//   box-shadow: 0px 8px 20px 1px #888888;
-// }
-
-// .photoProgram1 {
-//   width: 40%;
-//   margin-left: 30%;
-//   margin-top: 5%;
-//   align-items: center;
-// }
-
-// .classProgram {
-//   h3 {
-//     font-family: Avenir;
-//     padding-top: 20px;
-//     padding-bottom: 20px;
-
-//     color: #261668;
-//     // padding-left: 15%;
-//     width: 100%;
-//     text-align: center;
-//     font-size: 21px;
-//     line-height: 1.5;
-//     z-index: 2;
-//   }
-// }
-
-// .classProgram {
-//   p {
-//     p {
-//       strong {
-//         font-family: AvenirLTStd;
-//         color: #424242;
-//         font-size: 15px;
-//       }
-
-//       margin-left: 40px;
-//       padding-bottom: 10px;
-//     }
-//     li {
-//       font-family: AvenirLTStd;
-//       // padding-top: 10px;
-//       // padding-bottom: 10px;
-
-//       color: #424242;
-//       margin-left: 60px;
-//       width: 75%;
-//       text-align: left;
-//       font-size: 14px;
-//       line-height: 1.7;
-//       z-index: 2;
-//     }
-//   }
-// }
-
-// .flex-container {
-//   display: flex;
-//   > div {
-//     margin: 10px;
-//     margin-left: 13%;
-//     margin-top: 20px;
-
-//     background-color: white;
-//     width: 30%;
-//     box-shadow: 0px 8px 20px 1px #888888;
-//   }
-// }

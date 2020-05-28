@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import "../scss/Program.scss";
+import "../scss/TimeLine.scss";
 import { connect } from "react-redux";
 import { getProgramContent } from "../redux/action/websiteContent";
 
-class Program extends Component {
+class TimeLine extends Component {
   constructor() {
     super();
     this.state = {
@@ -47,7 +47,7 @@ class Program extends Component {
     return (
       <>
         <div className="TextContent2">
-          <h1>Undergraduate Scholarship Program</h1>
+          <h1>Time Line</h1>
           <p>{this.state.programContent}</p>
         </div>
 
@@ -85,4 +85,4 @@ const mapStateToProps = ({ websiteContent }) => {
   };
 };
 
-export default connect(mapStateToProps)(Program);
+export default connect(mapStateToProps)(TimeLine);

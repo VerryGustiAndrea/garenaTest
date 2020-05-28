@@ -13,6 +13,7 @@ class Partner extends Component {
     this.state = {
       dataUniversity: [],
       dataFaculty: [],
+      filterFaculty1: [],
     };
   }
   getDataUniversity = async () => {
@@ -32,11 +33,17 @@ class Partner extends Component {
     // console.log(
     //   this.props.websiteContent.programContent.data[0].program_content
     // );
-    // console.log(this.props.faculty.facultyData);
+    console.log(this.props.faculty.facultyData.data);
     this.setState({
       dataFaculty: this.props.faculty.facultyData.data,
     });
-    // setProgramContent(props.program.data);
+    var newArray = this.props.faculty.facultyData.data.filter(function (el) {
+      return el.univ_id == 1;
+    });
+    // console.log(newArray);
+    this.setState({
+      filterFaculty1: newArray,
+    });
   };
 
   componentDidMount = () => {
@@ -51,6 +58,7 @@ class Partner extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
     };
+
     return (
       <>
         <div className="TextContent2">
@@ -59,17 +67,29 @@ class Partner extends Component {
             <Slider {...settings}>
               {this.state.dataUniversity.map((e) => {
                 return (
-                  <div class="grid-container">
+                  <div class="flex-container-partner">
+                    {/* <div class="grid-container"> */}
                     <div className="titleSlide">
                       <p>{e.univ_name}</p>
                     </div>
-                    <div className="Slide1">
-                      <img className="photoProgram1" src={e.univ_logo} />
-                    </div>
-                    <div className="faculty">
-                      {this.state.dataUniversity.map((e) => {
-                        return <a>{e.name}</a>;
-                      })}
+                    <div class="row">
+                      <div class="column">
+                        <div className="Slide1">
+                          <img className="photoProgram1" src={e.univ_logo} />
+                        </div>
+                      </div>
+                      <div class="column">
+                        <div className="faculty">
+                          {this.state.filterFaculty1.map((a) => {
+                            return (
+                              <text>
+                                {a.name}
+                                <br />
+                              </text>
+                            );
+                          })}
+                        </div>
+                      </div>
                     </div>
                   </div>
                 );
